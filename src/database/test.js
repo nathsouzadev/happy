@@ -23,5 +23,5 @@ Database.then(async db => {
   // const orphanage = await db.all('SELECT * FROM orphanages WHERE id = "3"');
   // console.log(orphanage);
 
-  console.log(await db.all("DELETE FROM orphanages"))
+  // console.log(await db.all("DELETE FROM orphanages"))
 });

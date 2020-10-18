@@ -89,3 +89,8 @@ a.create-orphanage:hover {
     font: 700 2rem/1 'Nunito', sans-serif;
     z-index: 5;
 }
+
+footer a{
+    text-decoration: none;
+    color: white;
+}

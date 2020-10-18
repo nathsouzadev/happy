@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- /*TELA DE LOGIN NÃO FUNCIONAL*/ -->
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar um orfanato</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="/css/map.css" />
+    <link rel="stylesheet" type="text/css" href="/css/forms.css" />
+    <link rel="stylesheet" type="text/css" href="/css/buttons.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/page-create-orphanage.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/logo-icon.png" />
+  </head>
+  <body>
+    <div id="page-create-orphanage">
+      <aside class="animate-right sidebar">
+        <a href="/"><img src="/images/map-marker.svg" alt="Happy" /></a>
+        <footer>
+          <button onclick="history.back()">
+            <img src="/images/arrow-back.svg" alt="Voltar" />
+          </button>
+        </footer>
+      </aside>
+      <main class="animate-appear with-sidebar">
+        <form action="save-orphanage" method="post" onsubmit="validate(event)">
+          <fieldset>
+            <legend>Cadastre-se</legend>
+            <div class="input-block">
+              <label for="user">Nome de usuário</label>
+              <input type="text" id="user" name="user" required/>
+            </div>
+            <div class="input-block">
+              <label for="senha">Digite uma senha</label>
+              <input type="password" id="senha" name="senha" required/>
+            </div>
+            <button type="submit" class="primary-button">Cadastrar</button>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+    <script src="/scripts/page-create-orphanage.js"></script>
+  </body>
+</html>

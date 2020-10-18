@@ -15,6 +15,8 @@ server
     .get('/orphanage', pages.orphanage)
     .get('/orphanages', pages.orphanages)
     .get('/create-orphanage', pages.createOrphanage)
+    .get('/login', pages.login)
+    .get('/create-user', pages.createUser)
     .post('/save-orphanage', pages.saveOrphanage)
 
 //on server

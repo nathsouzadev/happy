@@ -1,4 +1,4 @@
-.primary-button {
+.primary-button{
     width: 100%;
     margin-top: 6.4rem;
     height: 6.4rem;
@@ -20,6 +20,14 @@
 
 .primary-button img {
     margin-right: 1.6rem;
+}
+
+.primary-button + .primary-button {
+    margin-top: 1.8rem;
+}
+
+.primary-button a {
+    margin: 0;
 }
 
 .button-select {

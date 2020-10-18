@@ -69,5 +69,14 @@ module.exports = {
             console.log(error)
             return res.send('Erro no banco de dados!')
         }
-    }
+    },
+
+    login (req, res) {
+        return res.render('login')
+    },
+
+    createUser (req, res) {
+        return res.render('create-user')
+    },
+
 }
